@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titre"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center_horizontal"
+            android:text="Entrez votre nom et votre mots de passe"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="25dp"
+            android:background="@drawable/edittext_color"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:hint="@string/username"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="25dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorPrimary"
+            android:background="@drawable/edittext_color"
+            android:inputType="textWebPassword"
+            android:hint="@string/password"/>
+
+        <Button
+            android:id="@+id/connecter"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/button_color"
+            android:hint="@string/connecter"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
